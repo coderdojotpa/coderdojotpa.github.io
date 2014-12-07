@@ -1,4 +1,4 @@
-coderdojotpa
+tpccoderdojo
 ============
 
-Tampa Coderdojo Page
+Tampa CoderDojo website

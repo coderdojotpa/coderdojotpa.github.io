@@ -1,0 +1,28 @@
+body {
+  background-color: #2b2d2e;
+}
+
+.section-white {
+  background-color: #EEE;
+-webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+div h2 {
+  margin-top: 50px;
+}
+  
+div button {
+  color: black;
+}
+
+p {
+  color: white;
+}
+
+label {
+  color: #a98307;
+}
