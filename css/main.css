@@ -77,7 +77,7 @@ h1 {
   font-weight: 800;
 }
 h2 {
-  color: #53555c;
+  color: #a98307;
   font-family: 'Open Sans', sans-serif;
   font-size: 2em;
   border-bottom: 2px solid #53555c;
@@ -377,9 +377,7 @@ a:hover {
   margin-right: 10px;
   margin-bottom: 0;
 }
-.calltoaction-wrapper a {
-  vertical-align: top;
-}
+
 /*--------------------------------------------------------------------------
 +	Testimonials Style
 --------------------------------------------------------------------------*/
@@ -1691,7 +1689,6 @@ span.color-red {
   background: #222;
   color: #A0A0A0;
   padding: 0 20px 10px 20px;
-  border-top: 4px solid #4f8db3;
   margin-top: 20px;
   -webkit-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
   -moz-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
@@ -1699,7 +1696,8 @@ span.color-red {
   color: 0 -1px 12px rgba(0,0,0,0.4);
 }
 .footer h3 {
-  color: #E4E4E4;
+  color: #a98307;
+  margin-top: 20px;
   font-size: 1.3em;
   border-bottom: 1px dotted #7C7C7C;
 }
@@ -1845,6 +1843,11 @@ span.color-red {
   margin: 0 auto 30px auto;
   position: relative;
   height: 400px;
+  background: #222;
+  -webkit-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
+  color: 0 -1px 12px rgba(0,0,0,0.4);
 }
 #sequence img {
   max-width: 100%;
@@ -2362,6 +2365,8 @@ span.color-red {
 }
 .mainmenu {
   width: 100%;
+  margin-bottom: 10px;
+
   /* general ul style */
   /* first level ul style */
   /* sub-menu */
@@ -2384,7 +2389,7 @@ span.color-red {
 .mainmenu .mainmenu-submenu-inner > li > a {
   font-size: 1.2em;
   padding: 1.2em 1.5em;
-  color: #999;
+  color: #a98307;
   display: inline-block;
   text-decoration: none;
 }
