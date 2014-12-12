@@ -1,34 +1,24 @@
 var formValidation = function(){  
-  var in1 = document.registration.inputName;  
-  var in2 = document.registration.inputDOB;  
-  var in3 = document.registration.inputEmailStudent;  
-  var in4 = document.registration.inputTeacher;
-  var in5 = document.registration.inputEmailTeacher;
+  var in1 = document.registration.name;
+  var in2 = document.registration.email;
+  var in3 = document.registration.courses[0].checked;
+  var in4 = document.registration.courses[1].checked;
+  var in5 = document.registration.courses[2].checked;
   if(allLetter(in1))
   {  
-    if(dobCheck(in2))
+    if(ValidateEmail(in2))
     {
-      if(ValidateEmail(in3))
-      {
-        if(allLetter(in4))
-        {
-          if(ValidateEmail(in5))
-		  {
-            var ref = new Firebase("https://flickering-torch-4353.firebaseio.com/students");
-			return ref.push({
-			  name: in1.value,
-			  dob: in2.value,
-			  schoolYr: document.registration.inputSchool.value,
-			  emailStudent: in3.value,
-			  teacher: in4.value,
-			  emailTeacher: in5.value
-			  }, 
-			  alert("You have signed up! Check your email for Confirmation.")
-			);
-    	  }
-		}   
-  	  }
-  	}
+		var ref = new Firebase("https://flickering-torch-4353.firebaseio.com/students");
+		return ref.push({
+		  name: in1.value,
+		  email: in2.value,
+		  track1: in3,
+		  track2: in4,
+		  track3: in5,
+		  }, 
+		  alert("You have signed up! Check your email for Confirmation.")
+		);
+	}
   }
   return false;  
 }
