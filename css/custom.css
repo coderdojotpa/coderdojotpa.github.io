@@ -14,26 +14,18 @@ body {
 
 .section-blue {
   padding: 30px 0;
-  background-color: #53555c;
+  background-color: #2f556d;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -o-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
 }
-
+.section-blue h3 {
+  border-bottom: 2px solid #53555c;
+}
 li {
   list-style-type: circle;
-}
-
-.section-blue div div div h3 {
-  color: #EEE
-  line-height: 1.5em;
-  margin: 30px 0;
-  padding-left: 10px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 350;
-  margin-top: 20px;
 }
   
 div button {
