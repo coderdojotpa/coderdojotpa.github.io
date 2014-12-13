@@ -1,4 +1,4 @@
 tpccoderdojo
 ============
 
-Tampa CoderDojo website
+Tampa CoderDojo website (in progress)
