@@ -10,14 +10,15 @@
   -ms-transform: translateZ(0);
   transform: translateZ(0);
 }
+
 .section-white {
   background: #FFF;
 }
+
 .section .container:first-child h1,
 .section .container:first-child h2,
 .section .container:first-child h3 {
-  margin-top: 0;
-  font-weight: 700;
+  margin-top: 50;
 }
 .input-micro {
   width: 50px;
@@ -71,11 +72,13 @@ body {
   line-height: 20px;
   color: #535b60;
 }
+
 h1 {
   color: #53555c;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
+
 h2 {
   color: #a98307;
   font-family: 'Open Sans', sans-serif;
