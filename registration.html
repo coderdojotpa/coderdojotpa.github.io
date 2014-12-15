@@ -24,6 +24,37 @@
 
         <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
+    <style>
+      h2 {
+        margin-top: 0;
+      }
+      .form {
+        text-align: left;
+        background: #fafafa;
+        position: relative;
+        width: 77%;
+        margin: 0 auto;
+        padding: 20px;
+        -webkit-border-radius: 7px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 7px;
+        -moz-background-clip: padding;
+        border-radius: 7px;
+        background-clip: padding-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+        color: 0 1px 8px rgba(0, 0, 0, 0.4);
+        -webkit-transition: -webkit-box-shadow .25s linear;
+        -moz-transition: -moz-box-shadow .25s linear;
+        -o-transition: box-shadow .25s linear;
+        -ms-transition: box-shadow .25s linear;
+        transition: box-shadow .25s linear;
+      }
+    </style>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -76,52 +107,56 @@
 	        			<!-- Contact Form -->
 						<form class="form-horizontal" role="form" name="registration">
 							<!-- Form Name -->
-							<h3>Register for Treehouse!</h3>
-
-							<!-- Text input-->
-							<div class="control-group">
-							  <label class="control-label" for="name">Name</label>
-							  <div class="controls">
-								<input id="name" name="name" type="text" placeholder="Enter Your Name" class="input-medium">
-							  </div>
-							</div>
-
-							<!-- Text input-->
-							<div class="control-group">
-							  <label class="control-label" for="email">Email</label>
-							  <div class="controls">
-								<input id="email" name="email" type="text" placeholder="Enter Your Email" class="input-large">
-							  </div>
-							</div>
-
-							<!-- Multiple Checkboxes -->
-							<div class="control-group">
-							  <label class="control-label" for="courses">Which Track?</label>
-							  <div class="controls">
-								<label class="checkbox" for="courses-0">
-								  <input type="checkbox" name="courses" id="courses-0" value="Codecademy">
-								  Codecademy
-								</label>
-								<label class="checkbox" for="courses-1">
-								  <input type="checkbox" name="courses" id="courses-1" value="Build a Site (HTML/CSS/JS)">
-								  Build a Site (HTML/CSS/JS)
-								</label>
-								<label class="checkbox" for="courses-2">
-								  <input type="checkbox" name="courses" id="courses-2" value="Firebase (Site is Ready)">
-								  Firebase (Site is Ready)
-								</label>
-							  </div>
-							</div>
-
-							<!-- Button -->
-							<div class="control-group">
-							  <label class="control-label" for="submit"></label>
-							  <div class="controls">
-							    <input type="button" id="submit" name="submit" class="btn btn-primary" value="Sign Up" onclick="formValidation()" />
-							  </div>
-							</div>
-
-							</fieldset>
+							<h2>Register for Coderdojo at the Hive!</h2>
+              <h3>See Calendar Below for the next session's dates</h3>
+							<div class="form">
+                <div class="control-group">
+  							  <label class="control-label" for="name">Name</label>
+  							  <div class="controls">
+  								<input id="name" name="name" type="text" placeholder="Enter Your Name" class="input-medium">
+  							  </div>
+  							</div>
+  
+  							<!-- Text input-->
+  							<div class="control-group">
+  							  <label class="control-label" for="email">Email</label>
+  							  <div class="controls">
+  								<input id="email" name="email" type="text" placeholder="Enter Your Email" class="input-large">
+  							  </div>
+  							</div>
+  
+  							<!-- Multiple Checkboxes -->
+  							<div class="control-group">
+    						  <label class="control-label" for="courses">Which Track?</label>
+  							  <div class="controls">
+  								<label class="checkbox" for="courses-0">
+  								  <input type="checkbox" name="courses" id="courses-0" value="Code.org">
+  								  <a href="code-dot-org.html">Code.org</a>
+  								</label>
+  								<label class="checkbox" for="courses-1">
+  								  <input type="checkbox" name="courses" id="courses-1" value="Build a Site (HTML/CSS/JS)">
+  								  <a href="HTML-CSS-JS.html">Build a Site (HTML/CSS/JS)</a>
+  								</label>
+  								<label class="checkbox" for="courses-2">
+  								  <input type="checkbox" name="courses" id="courses-2" value="Firebase and Github">
+  								  <a href="build-a-form.html">Firebase and Github</a>
+  								</label>
+                  <label class="checkbox" for="courses-3">
+    							  <input type="checkbox" name="courses" id="courses-3" value="I need a laptop">
+  								  I need a laptop
+  								</label>
+  							  </div>
+  							</div>
+                
+    						
+  							<!-- Button -->
+  							<div class="control-group">
+  							  <label class="control-label" for="submit"></label>
+  							  <div class="controls">
+  							    <input type="button" id="submit" name="submit" class="btn btn-primary" value="Sign Up" onclick="formValidation()" />
+  							  </div>
+  							</div>
+              </div>
 						</form>
 		        		<!-- End Contact Info -->
 	        		</div>

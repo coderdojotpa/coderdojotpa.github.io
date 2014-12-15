@@ -15,6 +15,7 @@ var formValidation = function(){
 		  track1: in3,
 		  track2: in4,
 		  track3: in5,
+      laptop: document.courses[4].checked
 		  }, 
 		  alert("You have signed up! Check your email for Confirmation.")
 		);
