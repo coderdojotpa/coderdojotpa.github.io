@@ -2,6 +2,25 @@ body {
   background-color: #2b2d2e;
 }
 
+.calltoaction-wrapper h3 {
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    10% {text-shadow: 30px 30px 1px purple;}
+20% {text-shadow: 30px 30px 3px purple;}
+30% {text-shadow: 30px 30px 5px purple;}
+40% {text-shadow: 30px 30px 7px purple;}
+50% {text-shadow: 30px 30px 9px purple;}
+60% {text-shadow: 30px 30px 11px purple;}
+70% {text-shadow: 30px 30px 13px purple;}
+80% {text-shadow: 30px 30px 15px purple;}
+90% {text-shadow: 30px 30px 17px purple;}
+100% {text-shadow: 30px 30px 19px purple;}
+}
+
 .section-white {
   padding: 30px 0;
   background-color: #fafafa;
