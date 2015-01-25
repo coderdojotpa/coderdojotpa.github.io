@@ -7,7 +7,7 @@ body {
     animation: mymove 5s infinite;
 }
 
-/* Standard syntax */
+/* Standard syntax 
 @keyframes mymove {
     10% {text-shadow: 30px 30px 1px purple;}
 20% {text-shadow: 30px 30px 3px purple;}
@@ -29,7 +29,7 @@ body {
   -o-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
-}
+} */
 
 .section-blue {
   padding: 30px 0;
