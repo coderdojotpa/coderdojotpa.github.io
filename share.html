@@ -9,26 +9,23 @@
       <title>Coderdojo Tampa @ The Hive</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width">
-
+      <link rel="stylesheet" type="text/css" href="css/share.css">
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/icomoon-social.css">
 
       <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'> -->
 
-  	<!--[if lte IE 8]>
+    <!--[if lte IE 8]>
 		    <link rel="stylesheet" href="css/leaflet.ie.css" />
 		<![endif]-->
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/share.css">
 
+    <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    <style>
-      .section {
-        font-weight: bold;
-        margin: 0 auto;
-      }    
-        
-    </style>
+    
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -67,26 +64,46 @@
     				</nav>
 			    </div>
 		  </div>
-
+      <!-- Main Section -->
       <div class="section">
-    	  <div class="main-container">
-        	<div class="row">
-        		<div class="col-sm-3">
-              <img src="image/codedotorg.png"></img>
-            </div>
-            <div class="col-sm-9">
-              <p>
-                Learn about the basics of coding by taking the Code.org track!<br />
-                Coding tutorials in the form of web games will teach you the basics of coding.<br />
-                This will help you grasp the more difficult concepts when you continue on to the HTML/CSS/JS track.
-              </p>
-            </div>
-        			
-        		</div>
-        	</div>
-    	  </div>
-      </div>
+        <div class="main-container">
+          <div class="row">
+            <h1>Share Your Work Here!</h1>
+            <div class="col-sm-3 col-lg-5">
+              <h3>Enter your name and a JSFiddle Site...</h3>
+              <form class="form" role="form" name="registration">
+                <div class="control-group">
+                  <label class="control-label" for="name">User Name</label>
+                  <div class="controls">
+                    <input id="name" name="name" type="text" placeholder="Enter Your User Name" class="input-medium">
+                  </div>
+                </div>
+                    
 
+                <div class="control-group">
+                  <label class="control-label" for="website">JSFiddle Site</label>
+                  <div class="controls">
+                  <input id="website" name="website" type="text" placeholder="Ex: http://jsfiddle.net/rrbm823/t2vocpoq/embedded/result/" class="input-large">
+                  </div>
+                </div>
+                <div class="button-group">
+                  <label class="control-label" for="submit"></label>
+                  <div class="controls">
+                    <input type="button" id="submit" name="submit" class="btn btn-primary" value="Send" onclick="sendData()" />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-4 col-lg-1"></div>
+            <div class="col-sm-5 col-lg-6">
+              <h3> to share on our website!</h3>
+              <div class="example-chat">
+                <ul id='example-messages' class="example-chat-messages"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 	    <!-- Footer -->
 	    <div class="footer">
 	    	<div class="container">
@@ -114,8 +131,8 @@
 		    </div>
 	    </div>
         <!-- Javascripts -->
-		<script src="https://cdn.firebase.com/js/client/2.0.3/firebase.js"></script>
-
+		    <script src="https://cdn.firebase.com/js/client/2.0.3/firebase.js"></script>
+        <script src="js/share.js" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>

@@ -2,11 +2,63 @@ body {
   background-color: #2b2d2e;
 }
 
+iframe {
+  margin-left: 100px;
+}
 .calltoaction-wrapper h3 {
     -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
     animation: mymove 5s infinite;
 }
 
+.row {
+        font-weight: bold;
+        color: #eee;
+        margin: 25 auto;
+        margin-bottom: 25px;
+} 
+
+.main-container h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+.main-container h3 {
+  text-align: center;
+}
+
+.controls input {
+        color: #53555c;
+}
+.controls input:active {
+        color: #a98307
+}
+
+.form {
+        text-align: left;
+        background: #fafafa;
+        position: relative;
+        width: 77%;
+        margin: 0 auto;
+        padding: 20px;
+        -webkit-border-radius: 7px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 7px;
+        -moz-background-clip: padding;
+        border-radius: 7px;
+        background-clip: padding-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+        color: 0 1px 8px rgba(0, 0, 0, 0.4);
+        -webkit-transition: -webkit-box-shadow .25s linear;
+        -moz-transition: -moz-box-shadow .25s linear;
+        -o-transition: box-shadow .25s linear;
+        -ms-transition: box-shadow .25s linear;
+        transition: box-shadow .25s linear;
+}
 /* Standard syntax 
 @keyframes mymove {
     10% {text-shadow: 30px 30px 1px purple;}
@@ -43,12 +95,9 @@ body {
 .section-blue h3 {
   border-bottom: 2px solid #53555c;
 }
-li {
-  list-style-type: circle;
-}
   
-div button {
-  color: black;
+.button-group {
+  position: relative;
 }
 
 p {
